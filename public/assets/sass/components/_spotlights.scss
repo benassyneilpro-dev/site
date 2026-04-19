@@ -95,7 +95,8 @@
 			}
 
 			@include breakpoint('<=medium') {
-				display: block;
+				@include vendor('display', 'flex');
+				@include vendor('flex-direction', 'column-reverse');
 
 				> .image {
 					width: 100%;

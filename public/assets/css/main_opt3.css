@@ -2517,7 +2517,14 @@ body.is-ie .spotlights > section {
 }
 @media screen and (max-width: 980px) {
   .spotlights > section {
-    display: block;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .spotlights > section > .image {
     width: 100%;
